@@ -12,13 +12,14 @@
     },
     "authors": [
         {
-            "name": "CryQ",
+            "name": "wyq09",
             "email": "407069461@@qq.com"
         }
     ],
     "autoload": {
         "psr-4": {
             "Alipay\\": "aop/"
+            
         }
     },
     "autoload-dev": {

@@ -5,4 +5,4 @@
 
 基于 https://github.com/wi1dcard/alipay-sdk-php 修改扩展
 
-❤️ 本项目 [GitHub](https://github.com/CryQ/alipay-sdk-php)。
+❤️ 本项目 [GitHub](https://github.com/wyq09/alipay-sdk-php)。
