@@ -12,19 +12,35 @@ namespace Alipay\Request;
 class AntMerchantExpandIndirectImageUploadRequest extends AbstractAlipayRequest
 {
     /**
-     * 图片上传
+     * 图片二进制字节流，最大为10M
      **/
-    private $bizContent;
+    private $imageContent;
 
-    public function setBizContent($bizContent)
+    /**
+     * 图片格式，支持格式：bmp、jpg、jpeg、png、gif.
+     **/
+    private $imageType;
+
+    public function setImageType($imageType)
     {
-        $this->bizContent = $bizContent;
-        $this->apiParams['biz_content'] = $bizContent;
+        $this->imageType = $imageType;
+        $this->apiParams["image_type"] = $imageType;
     }
 
-    public function getBizContent()
+    public function getImageType()
     {
-        return $this->bizContent;
+        return $this->imageType;
+    }
+
+    public function setImageContent($imageContent)
+    {
+        $this->imageContent = $imageContent;
+        $this->apiParams["image_content"] = $imageContent;
+    }
+
+    public function getImageContent()
+    {
+        return $this->imageContent;
     }
 }
 
